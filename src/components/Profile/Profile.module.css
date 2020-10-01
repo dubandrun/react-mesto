@@ -1,0 +1,115 @@
+.profile {
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+}
+
+.rootSection {
+  width: calc(100% - 400px);
+  margin: auto;
+}
+
+@media screen and (max-width: 980px) {
+  .rootSection {
+    width: 90%;
+  }
+}
+
+.userInfo {
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  color: white;
+  width: 100%;
+}
+
+@media screen and (max-width: 980px) {
+  .userInfo {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.data {
+  max-width: 364px;
+  margin-left: 36px;
+}
+
+@media screen and (max-width: 980px) {
+  .data {
+    margin: 20px 0;
+    text-align: center;
+  }
+}
+
+.job {
+  margin: 20px 0 0 0;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.name {
+  margin: 0;
+  font-weight: normal;
+  font-size: 54px;
+  line-height: 56px;
+}
+
+.photo {
+  width: 150px;
+  height: 150px;
+  min-width: 150px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  /* background-image: url('https://cs8.pikabu.ru/post_img/big/2016/02/04/7/145458292112119207.jpg'); */
+}
+
+@media screen and (max-width: 980px) {
+  .photo {
+    margin-top: 40px;
+  }
+}
+
+.button {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  width: 150px;
+  height: 50px;
+  font-size: 30px;
+  display: block;
+  cursor: pointer;
+}
+
+.button:focus {
+  outline-color: greenyellow;
+}
+
+.userInfoButton {
+  position: absolute;
+  top: 16px;
+  right: 0;
+}
+
+@media screen and (max-width: 980px) {
+  .userInfoButton {
+    position: static;
+    margin-bottom: 40px;
+  }
+}
+
+.editButton {
+  width: 38px;
+  height: 18px;
+  font-size: 12px;
+  line-height: 15px;
+  margin-top: 24px;
+}
+
+@media screen and (max-width: 980px) {
+  .editButton {
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+}
