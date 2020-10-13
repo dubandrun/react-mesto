@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.82ac6d04.chunk.css",
+    "main.js": "/static/js/main.0325f154.chunk.js",
+    "main.js.map": "/static/js/main.0325f154.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.535ca397.js",
+    "runtime-main.js.map": "/static/js/runtime-main.535ca397.js.map",
+    "static/js/2.400592ed.chunk.js": "/static/js/2.400592ed.chunk.js",
+    "static/js/2.400592ed.chunk.js.map": "/static/js/2.400592ed.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.beec7998cd742a2fe1fd3923999a687b.js": "/precache-manifest.beec7998cd742a2fe1fd3923999a687b.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.82ac6d04.chunk.css.map": "/static/css/main.82ac6d04.chunk.css.map",
+    "static/js/2.400592ed.chunk.js.LICENSE.txt": "/static/js/2.400592ed.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/static/media/Inter-Regular.9b0077c4.woff2",
+    "static/media/close.svg": "/static/media/close.0b9bf754.svg",
+    "static/media/Card.module.css": "/static/media/trash-icon.e9774320.svg",
+    "static/media/logo.svg": "/static/media/logo.fade1408.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.535ca397.js",
+    "static/js/2.400592ed.chunk.js",
+    "static/css/main.82ac6d04.chunk.css",
+    "static/js/main.0325f154.chunk.js"
+  ]
+}
