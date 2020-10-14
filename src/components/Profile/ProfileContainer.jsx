@@ -1,27 +1,39 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import Profile from './Profile';
 
-import getUserInfoThunkCreator from '../../redux/profile-reducer'
+import Profile from './Profile';
+import ProfileDataReduxForm from './ProfileDataForm';
+
+import { getUserInfoThunkCreator } from '../../redux/profile-reducer'
 
 class ProfileContainer extends React.Component {
 
+  updateProfileInfo() {
+    this.props.getUserInfoThunkCreator()
+  }
+
+  componentDidMount() {
+    this.updateProfileInfo()
+  }
+  
   render () {
     return (
+      <>
       <Profile 
-        name={this.props.name}
-        job={this.props.job}
-        avatar={this.props.avatar}
-      /> 
+        {...this.props}
+        avatar={this.props.userInfo.avatar}
+        name={this.props.userInfo.name}
+        about={this.props.userInfo.about}
+      />
+      {/* <ProfileDataReduxForm />  */}
+      </> 
     ) 
   } 
 }
 
 const mapStateToProps = (state) => {
   return {
-    name: state.profile.name,
-    job: state.profile.status,
-    avatar: state.profile.avatar
+    userInfo: state.profile.userInfo
   }
 }
 

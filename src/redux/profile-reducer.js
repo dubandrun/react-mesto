@@ -3,9 +3,7 @@ import { userAPI } from "../api/api"
 const SET_USER_INFO = 'SET-USER-INFO'
 
 const initialState = {
-  name: null,
-  job: null,
-  avatar: null
+  userInfo: {}
 }
 
 const profileReducer = (state = initialState, action) => {
@@ -14,7 +12,7 @@ const profileReducer = (state = initialState, action) => {
     case SET_USER_INFO: {
       return {
         ...state,
-        ...action.userInfo
+        userInfo: action.userInfo
       }
     }
 
@@ -24,15 +22,16 @@ const profileReducer = (state = initialState, action) => {
   }
 }
 
-export const setUserInfoActionCreator = (name, job, avatar) => ({
-  type: SET_USER_INFO,
-  userInfo: {name, job, avatar}
+export const setUserInfoActionCreator = (userInfo) => ({
+  type: SET_USER_INFO, 
+  userInfo
 })
 
 export const getUserInfoThunkCreator = () => async (dispatch) => {
   const res = await userAPI.getUserInfo()
-  const {name, job, avatar} = res
-  dispatch(getUserInfoThunkCreator(name, job, avatar))
+  // const {name, about, avatar} = res.data
+  dispatch(setUserInfoActionCreator(res.data))
 }
 
 export default profileReducer
+

@@ -1,21 +1,21 @@
 import React from 'react';
 
-import { connect, Provider } from 'react-redux';
-import store from './redux/redux-store'
+// import { connect } from 'react-redux';
 
 import './App.css'
 
 import Header from './components/Header/Header';
 import ProfileContainer from './components/Profile/ProfileContainer';
+import CardsContainer from './components/Cards/CardsContainer';
+import ProfileDataReduxForm from './components/Profile/ProfileDataForm';
 
 function App() {
   return (
     <div className="root">
-      <Provider store={store}>
         <Header />
         <ProfileContainer />
-        {/* <CardsContainer /> */}
-      </Provider>
+        <CardsContainer />
+        <ProfileDataReduxForm />
     </div>
   );
 }
